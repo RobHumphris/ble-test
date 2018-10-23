@@ -32,3 +32,14 @@ apps:
 
 6. `git clone https://github.com/RobHumphris/ble-test.git`
 7. `cd ble-test`
+8. `snapcraft`
+9. `sudo snap install ble-test_0+git.cb54c62_amd64.snap --devmode --dangerous`
+10. Registered the snap name ble-snap `https://dashboard.snapcraft.io/register-snap/`
+11. `snapcraft login`
+12. `snapcraft push ble-test_0+git.cb54c62_amd64.snap`
+
+To get the snap running on the Dell Edge Gateway 3001 (obviously the version numbers and ip addresses will change...)
+1. `scp ./ble-test_0+git.cb54c62_amd64.snap admin@192.168.1.95:~`
+2. Login to the Gateway `ssh admin@192.168.1.95`
+3. `sudo snap install ble-test_0+git.cb54c62_amd64.snap --devmode --dangerous`
+4. `sudo ble-test`
