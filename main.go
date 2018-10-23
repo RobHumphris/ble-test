@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/RobHumphris/Ble-test/ble"
+	"github.com/RobHumphris/ble-test/ble"
 )
 
 func main() {
